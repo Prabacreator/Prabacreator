@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Bootstrap css-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+	body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif !important;
+	font-weight: 300 !important;
+	}
+ 	main {
+		width: 100%;
+		display: flex;
+		min-height: 100vh;
+		align-items: center;
+		justify-content: center;
+	}
+	.container-fluid {
+		width: 100%;
+		height: 100%;
+		display: block;
+		text-align: center;
+		justify-content: center;
+	}
+	form {
+		text-align: left;
+	}
+	a {text-decoration: none !important;}
+	@media (min-width: 768px) {
+		main {max-width: 420px;}
+	}
+</style>
+</head>
+<body class="bg-secondary">
+	<main class="m-auto">
+	<section class="container-fluid p-4">
+	<div class="container btn btn-light border shadow py-2">
+		<img src="avatar.png" width="80"/>
+		<h2 class="text-danger pt-2">Message For Me From</h2>
+		<div>
+			<div class="spinner-grow spinner-grow-sm text-danger"></div>
+			<div class="spinner-grow spinner-grow-sm text-warning"></div>
+			<div class="spinner-grow spinner-grow-sm text-success"></div>
+			<div class="spinner-grow spinner-grow-sm text-primary"></div>
+			<div class="spinner-grow spinner-grow-sm text-info"></div>
+			<div class="spinner-grow spinner-grow-sm text-secondary"></div>
+		</div>
+		<form action="https://script.google.com/macros/s/AKfycbwAWvImKUmpssAPZmjapFpVWGe0iRZMusJ58OUx9DHg0Su_KMVixFiiZjgA6Pc2P8RM/exec" method="post">
+			<label class="text-info">Name :</label>
+			<input class="btn btn-outline-info w-100 mb-2 text-start" name="Name" type="text" required>
+			<label class="text-primary">Phone :</label>
+  			<input class="btn btn-outline-primary w-100 mb-2 text-start" name="Phone" type="text" required>
+  			<label class="text-success">Address :</label>
+  			<textarea class="btn btn-outline-success w-100 mb-2 text-start"  name="Address" type="text" required></textarea>
+  			<label class="text-warning">Message :</label>
+			<textarea class="btn btn-outline-warning w-100 mb-2 text-start" rows="5" name="Message" type="text" required></textarea>
+			<button class="btn btn-outline-danger"  type="submit">Send</button>
+		</form>
+		<div class="btn btn-dark">
+			<a href="http://wa.me/+6281383421166?text">Back To Whatsapp</a>
+		</div>
+	</div>
+	</section>
+	</main>
+</body>
+</html>
